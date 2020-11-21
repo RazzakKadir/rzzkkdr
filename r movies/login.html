@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>R Movies</title>
+  <link rel="icon" type="img/ico" href="img/rr.ico"/>
+  <link rel="stylesheet" href="css/login.css"/>
+  <link rel="stylesheet" href="css/bootstrap(css)/bootstrap.css"/>
+  <link rel="stylesheet" href="css/bootstrap(css)/bootstrap.min.css"/>
+  <link rel="stylesheet" href="css/bootstrap(css)/bootstrap-grid.css"/>
+  <style media="screen">
+  .home{
+    border: 0.1px solid ;
+    width: 100%;
+    padding: 5px;
+    transition: 0.5s;
+    background: transparent;
+    animation: color-change 20s ease infinite;
+
+  }
+  .home:hover{
+    box-shadow: 0 0 10px 4px;
+    color: white;
+
+  }
+  </style>
+</head>
+  <body>
+    <center>
+      <a href="index.php"><input type="button" class="home" value="HOME"></a>
+    <form class="login-box" method="POST" action="login.php">
+      <h1>Log In</h1>
+      <div class="textbox">
+        <input id="user" name="user" type="text" placeholder="Username" required="required">
+      </div>
+
+      <div class="textbox">
+        <input id="pass" name="pass" type="password" placeholder="Password" required="required">
+      </div>
+
+      <input type="submit" class="login-btn" value="Log In" style="color:white;">
+      <p>Don't have an account?</br><a href="signup.html">Sign up</a></p>
+    </form>
+  </center>
+<footer>
+  <script type="text/javascript" src="js/bootstrap(js)/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap(js)/bootstrapjquery-3.3.1.slim.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap(js)/bootstrap.js"></script>
+</center>
+
+</footer>
+</body>
+</html>

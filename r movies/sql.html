@@ -1,0 +1,65 @@
+
+    <!-------sadadasdas
+
+
+
+
+
+
+
+    CREATE TABLE movie_t (
+     movie_ID int(11) not null PRIMARY KEY AUTO_INCREMENT,
+     movie_Name varchar(255) not null,
+     movie_Duration varchar(255) not null,
+     photo_path text not null,
+     seat_ID varchar(255) REFERENCES seat_t(seat_ID)
+    );
+
+
+
+
+    CREATE TABLE users_t (
+     user_ID int(11) not null PRIMARY KEY AUTO_INCREMENT,
+     user_Name varchar(255) not null,
+     user_Password varchar(50) not null,
+     user_Email varchar(255) not null,
+     user_Role int(11) not null,
+     user_Last_Login DATETIME not null
+    );
+
+
+    CREATE TABLE hall_t (
+     hall_ID int(11) not null PRIMARY KEY AUTO_INCREMENT,
+     hall_Name varchar(255) not null,
+     movie_Duration varchar(255) not null,
+     seat_ID varchar(255) REFERENCES seat_t(seat_ID)
+    );
+
+
+    CREATE TABLE booking_t (
+     booking_ID int(11) not null PRIMARY KEY AUTO_INCREMENT,
+     user_ID varchar(11) REFERENCES users_t(user_ID)
+     movie_ID varchar(11) REFERENCES movie_t(movie_ID)
+     hall_ID varchar(11) REFERENCES hall_t(hall_ID)
+     showtime_ID varchar(11) REFERENCES showtime_t(showtime_ID)
+     seat_ID varchar(255) REFERENCES seat_t(seat_ID)
+    );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    ------->

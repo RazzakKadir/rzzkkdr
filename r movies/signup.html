@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="css/signup.css"/>
+  <link rel="stylesheet" href="css/bootstrap(css)/bootstrap.css"/>
+  <link rel="stylesheet" href="css/bootstrap(css)/bootstrap.min.css"/>
+  <link rel="stylesheet" href="css/bootstrap(css)/bootstrap-grid.css"/>
+  <style media="screen">
+  .home{
+    border: 0.1px solid ;
+    width: 100%;
+    padding: 5px;
+    transition: 0.5s;
+    background: transparent;
+    animation: color-change 20s ease infinite;
+
+  }
+  .home:hover{
+    box-shadow: 0 0 10px 4px;
+    color: white;
+
+  }
+
+  </style>
+</head>
+<center>
+  <body>
+    <a href="index.php"><input type="button" class="home" value="HOME"></a>
+    <form class="signUp-box" method="POST" action="signup.php">
+      <h1>Sign Up</h1>
+      <div class="textbox">
+        <input id="user" name="user" type="text" placeholder="Username" required="required">
+      </div>
+      <div class="textbox">
+        <input id="pass" name="pass" type="password" placeholder="Password" required="required">
+      </div>
+      <div class="textbox">
+        <input id="confirmpass" name="confirmpass" type="password" placeholder="Confirm password" required="required">
+      </div>
+      <div class="textbox">
+        <input id="email" name="email" type="email" placeholder="Email Address" required="required">
+      </div>
+      <input type="reset" class="button" value="Clear" style="color:white;">
+      <input type="submit" class="button" value="Sign Up" style="color:white;">
+      <p>Have an account?<a href="login.html">Log in</a></p>
+    </form>
+<footer>
+  <script type="text/javascript" src="js/bootstrap(js)/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap(js)/bootstrapjquery-3.3.1.slim.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap(js)/bootstrap.js"></script>
+
+</footer>
+</body>
+</center>
+</html>

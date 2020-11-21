@@ -1,0 +1,271 @@
+*{
+  margin:0;
+  padding:0;
+  font-family: "Times New Roman";
+}
+body{
+  animation: mycolor 20s ease infinite;
+}
+
+.navbarBrand img {
+    height: 30px;
+    padding-left: 10px;
+}
+.navbar-expand-lg .navbar-nav .nav-link img{
+  height: 30px;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.navbar-nav li {
+    padding: 0 69px;
+    position: relative;
+}
+.navbar-nav nav-link {
+    padding-right: 0;
+    padding-left: 0;
+}
+.navbar-nav li a {
+    float: right;
+    text-align: right;
+    padding-right: 10px;
+}
+#navBar ul li a{
+  color: white!important;
+  text-transform: uppercase;;
+}
+#navBar ul li.active a {
+    color: White !important;
+}
+
+#navBar ul li a:hover {
+    color: grey !important;
+}
+
+.navbar {
+    background: black;
+}
+.navbar-toggler {
+    border:none   !important;
+}
+
+.nav-link {
+    color: black !important;
+    font-weight: 700;
+    font-size: 14px;
+}
+.navbar-nav > li > .dropdown-menu {
+  background-color: #FF0000;
+}
+.dropdown-menu >.dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 0.25rem 2.5rem;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+.dropdown:hover > .dropdown-menu {
+    display: block;
+    position:relative ;
+    transition: 5s;
+}
+
+#slider {
+    width: 100%;
+    padding-top: 0px;
+}
+
+.carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial !important;
+}
+
+.carousel-caption h5 {
+    color: #808080;
+    font-size: 42px;
+}
+.carousel-item{
+  height: 100vh;
+  position: fixed;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  background-size: cover;
+  transition: 3s ease infinite;
+}
+.carousel-item img{
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 10px;
+  transition: 1s ease infinite;
+}
+#movies {
+    padding-top: 100px;
+    padding-bottom: 35px;
+    color: #555;
+    margin-top: 10px;
+    color: White;
+}
+#movies img{
+  width: 200px;
+}
+#movies h2{
+  color: white;
+}
+
+#movies h1{
+  text-align: center;
+  color: white !important;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#movies h1::after {
+    content: '';
+    background: white !important;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+}
+
+
+.d-inline-block{
+  width:178px;
+  padding:0 15px;
+}
+
+.about-content {
+    padding-top: 20px;
+}
+
+.button {
+background-color: transparent;
+box-shadow: 0 0 10px 4px ;
+color: white;
+padding: 15px 32px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+margin: 4px 2px;
+cursor: pointer;
+}
+
+#contact{
+    padding-top: 10px;
+    padding-bottom: 70px;
+
+}
+#contact h1 {
+    text-align: center;
+    color: white !important;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#contact h1::after {
+    content: '';
+    background: white !important;
+    display: block;
+    height: 3px;
+    width: 170px;
+    margin: 20px auto 5px;
+}
+.contact-form{
+    max-width: 600px;
+    margin:auto;
+    padding: 0 20px 30px;
+    overflow:hidden;
+}
+.contact-form-text{
+    display: block ;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16px 0;
+    border: 0;
+    background: #111;
+    padding: 20px 40px;
+    outline: none;
+    color: #ddd;
+    transition: 0.5s;
+}
+.contact-form-text:focus {
+    box-shadow:0 0 10px 4px;
+
+}
+textarea.contact-form-text:focus{
+    resize:none;
+    height:120px;
+}
+.contact-form-btn {
+    float:right;
+    border:0;
+    background:grey;
+    color:white;
+    padding:10px 50px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.contact-form-btn:hover{
+    box-shadow: 0 0 10px 4px;
+}
+
+#topBtn {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    font-size: 28px;
+    width: 50px;
+    height: 50px;
+    background-color: Black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    border: 3px solid White;
+    border-radius: 50%;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+    transition-property: background, color;
+    align-items:center;
+}
+
+#topBtn:hover, #topBtn:focus {
+    background-color: white;
+    color: black;
+}
+
+@keyframes color-change {
+    0% { color: white; }
+    25% {color: black;}
+    50% { color: white; }
+    75% {color: black;}
+    100% { color: white; }
+}
+
+@keyframes mycolor {
+    0% {
+        background-color : #000000;
+    }
+    25% {
+        background-color :	#8B0000;
+    }
+    50% {
+        background-color :#000000;
+    }
+    75% {
+        background-color :#8B0000;
+    }
+
+    100% {
+        background-color :#000000;
+    }
+
+}
